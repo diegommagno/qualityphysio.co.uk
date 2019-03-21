@@ -23,10 +23,10 @@ Variable
 require('recaptcha-master/src/autoload.php');
 
 /* ReCaptch Secret */
-$recaptchaSecret = '<!-- Put Your reCaptcha Secret Key -->';
+$recaptchaSecret = '6LcuGJkUAAAAAGwokahTSI1dtDH5asQmvcc_Fd2k';
 
-$dzEmailTo 		= "emailaddress@domain.com";   /* Receiver Email Address */
-$dzEmailFrom    = "Medico Contact";
+$dzEmailTo 		= "physio@qualityphysio.uk";   /* Receiver Email Address */
+$dzEmailFrom    = "QualityPhysio.uk";
 
 function pr($value)
 {
