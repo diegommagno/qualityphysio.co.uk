@@ -75,7 +75,7 @@ try {
 				$dzRes['status'] = 0;
 				$dzRes['msg'] = 'Wrong Email Format.';
 			}
-			$dzMailSubject = 'Medico|Contact Form: A Person want to contact';
+			$dzMailSubject = 'Quality Physio | Contact Form: A Person want to contact';
 			$dzMailMessage	= 	"
 								A person want to contact you: <br><br>
 								Name: $dzName<br/>
@@ -104,12 +104,12 @@ try {
 			if(mail($dzEmailTo, $dzMailSubject, $dzMailMessage, $dzEmailHeader))
 			{
 				$dzRes['status'] = 1;
-				$dzRes['msg'] = 'We have received your message successfully. Thanks for Contact.';
+				$dzRes['msg'] = 'We have received your message successfully. Thanks for contacting us.';
 			}
 			else
 			{
 				$dzRes['status'] = 0;
-				$dzRes['msg'] = 'Some problem in sending mail, please try again later.';
+				$dzRes['msg'] = 'Problem in sending email, please try again later.';
 			}
 			echo json_encode($dzRes);
 			exit;
@@ -133,7 +133,7 @@ try {
 			
 				
 			
-			$dzMailSubject = 'Medico|Appointment Form: A Person want to contact';
+			$dzMailSubject = 'Quality Physio | Appointment Form: A Person want to contact';
 			$dzMailMessage	= 	"
 								A person want to contact you: <br><br>
 								Name: $dzName<br/>
@@ -161,12 +161,12 @@ try {
 			if(mail($dzEmailTo, $dzMailSubject, $dzMailMessage, $dzEmailHeader))
 			{
 				$dzRes['status'] = 1;
-				$dzRes['msg'] = 'We have received your message successfully. Thanks for Contact.';
+				$dzRes['msg'] = 'We have received your message successfully. Thanks for contacting us.';
 			}
 			else
 			{
 				$dzRes['status'] = 0;
-				$dzRes['msg'] = 'Some problem in sending mail, please try again later.';
+				$dzRes['msg'] = 'Problem in sending email, please try again later.';
 			}
 			echo json_encode($dzRes);
 			exit;
@@ -176,7 +176,7 @@ try {
 	}
 } catch (\Exception $e) {
     $dzRes['status'] = 0;
-	$dzRes['msg'] = $e->getMessage().'Some problem in sending mail, please try again later.';
+	$dzRes['msg'] = $e->getMessage().'Problem in sending mail, please try again later.';
 	echo json_encode($dzRes);
 	exit;
 }
