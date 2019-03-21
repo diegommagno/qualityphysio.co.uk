@@ -25,7 +25,7 @@ require('recaptcha-master/src/autoload.php');
 /* ReCaptch Secret */
 $recaptchaSecret = '6LcuGJkUAAAAAGwokahTSI1dtDH5asQmvcc_Fd2k';
 
-$dzEmailTo 		= "diegomartinelli@live.com";   /* Receiver Email Address */
+$dzEmailTo 		= "physio@qualityphysio.uk";   /* Receiver Email Address */
 $dzEmailFrom    = "QualityPhysio.uk";
 
 function pr($value)
