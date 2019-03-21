@@ -77,7 +77,7 @@ try {
 			}
 			$dzMailSubject = 'Quality Physio | Contact Form: A Person want to contact';
 			$dzMailMessage	= 	"
-								A person want to contact you: <br><br>
+								A person wants to contact you: <br><br>
 								Name: $dzName<br/>
 								Email: $dzEmail<br/>
 								Message: $dzMessage<br/>
